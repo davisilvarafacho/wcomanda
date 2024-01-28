@@ -1,0 +1,311 @@
+/* colors definition */
+:root {
+  --wc-purple: #42047e;
+  --wc-green: #3dd39c;
+  --wc-green-bom-2: #1de89d;
+  --wc-green-bom: #02d588;
+  --wc-green-original: #07f49e;
+
+  --wc-purple-rgb: 66, 4, 126;
+  --wc-green-rgb: 7, 244, 158;
+}
+
+/* html config */
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Lexend;
+  background-color: #f8f9fa !important;
+}
+
+::selection {
+  background: #42047e;
+  /* WebKit/Blink Browsers */
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #42047e;
+  /* Gecko Browsers */
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  /* Chrome, Safari, Edge, Opera 2 */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+/* bootstrap overwrite */
+.invalid-feedback {
+  display: block !important;
+  min-height: 1.5em !important;
+}
+
+/* fonts */
+.font-raleway {
+  font-family: "Raleway!important";
+}
+
+.font-ooppins {
+  font-family: "Poppins!important";
+}
+
+.font-montserrat {
+  font-family: "Montserrat!important";
+}
+
+.font-oswald {
+  font-family: "Oswald!important";
+}
+
+.font-rhodium-libre {
+  font-family: "Rhodium Libre!important";
+}
+
+.font-lexend-mega {
+  font-family: "Lexend Mega!important";
+}
+
+.font-lexend-mega {
+  font-family: "Lexend!important";
+}
+
+/* buttons */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--wc-purple);
+  --bs-btn-border-color: var(--wc-purple);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #340761;
+  --bs-btn-hover-border-color: #330165;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #2f0558;
+  --bs-btn-active-border-color: #42047e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--wc-purple);
+  --bs-btn-disabled-border-color: var(--wc-purple);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--wc-purple);
+  --bs-btn-border-color: var(--wc-purple);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--wc-purple);
+  --bs-btn-hover-border-color: var(--wc-purple);
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--wc-purple);
+  --bs-btn-active-border-color: var(--wc-purple);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--wc-purple);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--wc-purple);
+  --bs-gradient: none;
+}
+
+.btn-success {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--wc-green);
+  --bs-btn-border-color: var(--wc-green);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #08a38c;
+  --bs-btn-hover-border-color: #146c43;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #146c43;
+  --bs-btn-active-border-color: #13653f;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--wc-green);
+  --bs-btn-disabled-border-color: var(--wc-green);
+}
+
+.btn-outline-success {
+  --bs-btn-color: var(--wc-green);
+  --bs-btn-border-color: var(--wc-green);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--wc-green);
+  --bs-btn-hover-border-color: var(--wc-green);
+  --bs-btn-focus-shadow-rgb: 25, 135, 84;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--wc-green);
+  --bs-btn-active-border-color: var(--wc-green);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--wc-green);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--wc-green);
+  --bs-gradient: none;
+}
+
+/* texts */
+.text-primary {
+  --bs-text-opacity: 1;
+  color: rgba(var(--wc-purple-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-success {
+  --bs-text-opacity: 1;
+  color: rgba(var(--wc-green-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-bg-primary {
+  color: #fff !important;
+  background-color: rgba(
+    var(--wc-purple-rgb),
+    var(--bs-bg-opacity, 1)
+  ) !important;
+}
+
+.text-bg-success {
+  color: #fff !important;
+  background-color: rgba(
+    var(--wc-green-rgb),
+    var(--bs-bg-opacity, 1)
+  ) !important;
+}
+
+/* bgs */
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--wc-purple-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-success {
+  --bs-bg-opacity: 1;
+  background-color: var(--wc-green) !important;
+  background-color: rgba(var(--wc-green-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-gray {
+  --bs-bg-opacity: 1;
+  background-color: var(--cms-cinza-claro) !important;
+  background-color: rgba(
+    var(--cms-cinza-claro-rgb),
+    var(--bs-bg-opacity)
+  ) !important;
+}
+
+/* borders */
+.border-primary {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--wc-purple-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-success {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--wc-green-rgb), var(--bs-border-opacity)) !important;
+}
+
+/* input */
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #2e0657;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(var(--wc-purple-rgb), 0.25);
+}
+
+/* sizes */
+.w-1 {
+  width: 1%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+/* positions */
+.start-20 {
+  position: absolute;
+  left: 20%;
+}
+
+.start-25 {
+  position: absolute;
+  left: 25%;
+}
+
+.start-50 {
+  position: absolute;
+  left: 50%;
+}
+
+.start-75 {
+  position: absolute;
+  left: 75%;
+}
+
+.start-80 {
+  position: absolute;
+  left: 80%;
+}
+
+.end-20 {
+  position: absolute;
+  right: 20%;
+}
+
+.end-25 {
+  position: absolute;
+  right: 25%;
+}
+
+.end-50 {
+  position: absolute;
+  right: 50%;
+}
+
+.end-75 {
+  position: absolute;
+  right: 75%;
+}
+
+.end-80 {
+  position: absolute;
+  right: 80%;
+}
+
+/* my adjusts */
+.no-caret {
+  caret-color: transparent;
+}
+
+.title {
+  color: var(--cms-azul);
+  padding-left: 12px;
+  border-left: 5px solid var(--cms-azul-2);
+}
+
+@media print {
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+
+  .print {
+    page-break-after: avoid;
+    page-break-before: avoid;
+    padding: 0;
+  }
+}
